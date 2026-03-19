@@ -1,11 +1,19 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <div class="flex-col items-center bg-primary p-16">
+    <h1 class="text-center">Pizza Linguine</h1>
+    <h2 class="text-center">The best pizza at Anděl</h2>
+  </div>
 
-<style scoped></style>
+  <div class="flex justify-between p-4 bg-zinc-300">
+    <div class="flex-col">
+      <h5>Contacts:</h5>
+      <p>pizza@pizzalinguine.com</p>
+    </div>
+
+    <div>
+      <img class="size-12" src="/favicon.ico" alt="" />
+    </div>
+  </div>
+</template>
