@@ -1,12 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-primary-2: #ffe0a3;
+  --color-primary-1: #fff6c7;
+  --color-primary-0: #fffae2;
+  --color-secondary-2: #b13535;
+  --color-secondary-1: #c93e3e;
+  --color-secondary-0: #db5252;
+  --color-detail-2: #00a408;
+  --color-detail-1: #25ba2c;
+  --color-detail-0: #36cb3e;
+  --font-normal: 'Source Serif 4', sans-serif;
+  --font-heading: 'Josefin Slab', sans-serif;
+}
 
 @layer base {
   h1 {
-    @apply text-6xl font-heading;
+    @apply text-9xl font-heading;
   }
   h2 {
-    @apply text-3xl font-heading;
+    @apply text-7xl font-heading;
+  }
+  h3 {
+    @apply text-5xl font-heading font-semibold;
+  }
+  p {
+    @apply text-2xl font-normal;
   }
 }

@@ -1,19 +1,32 @@
-<script setup></script>
+<script setup>
+import PizzaCard from './components/PizzaCard.vue'
+import { pizzaData } from './data'
+</script>
 
 <template>
-  <div class="flex-col items-center bg-primary p-16">
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center bg-primary-2 p-16">
     <h1 class="text-center">Pizza Linguine</h1>
-    <h2 class="text-center">The best pizza at Anděl</h2>
-  </div>
+    <h2 class="text-center">The best pizza at Andel</h2>
+  </section>
 
-  <div class="flex justify-between p-4 bg-zinc-300">
-    <div class="flex-col">
-      <h5>Contacts:</h5>
+  <section>
+    <div
+      class="mx-auto bg-primary-0 grid grid-cols-4 justify-center max-w-7xl gap-x-8 gap-y-16 p-8 pb-16"
+    >
+      <PizzaCard class="" v-for="pizza in pizzaData" :key="pizza.id" :pizza="pizza" />
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="flex justify-between p-4 bg-primary-2">
+    <div class="flex flex-col">
+      <h5 class="font-bold">Contacts:</h5>
       <p>pizza@pizzalinguine.com</p>
     </div>
 
     <div>
-      <img class="size-12" src="/favicon.ico" alt="" />
+      <img class="size-12" src="@/assets/logo.svg" alt="Logo" />
     </div>
-  </div>
+  </section>
 </template>
