@@ -12,7 +12,7 @@ import { pizzaData } from './data'
 
   <section>
     <div
-      class="mx-auto bg-primary-0 grid grid-cols-4 justify-center max-w-7xl gap-x-8 gap-y-16 p-8 pb-16"
+      class="mx-auto bg-primary-0 grid grid-cols-4 justify-center max-w-360 gap-x-8 gap-y-16 p-8 pb-16"
     >
       <PizzaCard class="" v-for="pizza in pizzaData" :key="pizza.id" :pizza="pizza" />
     </div>

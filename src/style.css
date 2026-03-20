@@ -4,14 +4,21 @@
   --color-primary-2: #ffe0a3;
   --color-primary-1: #fff6c7;
   --color-primary-0: #fffae2;
+
   --color-secondary-2: #b13535;
   --color-secondary-1: #c93e3e;
   --color-secondary-0: #db5252;
+
   --color-detail-2: #00a408;
   --color-detail-1: #25ba2c;
   --color-detail-0: #36cb3e;
+
   --font-normal: 'Source Serif 4', sans-serif;
   --font-heading: 'Josefin Slab', sans-serif;
+
+  --shadow-small: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  --shadow-medium: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-large: 4px 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 @layer base {
