@@ -10,7 +10,7 @@ defineProps(['pizza'])
 
     <div class="mb-auto">
       <p
-        class="text-center text-black my-1 text-3xl md:text-4xl lg:text-5xl font-heading font-semibold"
+        class="text-center text-black my-1 text-3xl lg:text-4xl 2xl:text-5xl font-heading font-semibold"
       >
         {{ pizza.name }}
       </p>
@@ -18,7 +18,7 @@ defineProps(['pizza'])
     </div>
 
     <button
-      class="text-center self-center text-white bg-secondary-0 w-2/3 p-2 rounded-full absolute -bottom-6 text-5xl font-heading shadow-medium hover:shadow-largeshadow-medium hover:shadow-large hover:scale-105 transition-all"
+      class="text-center self-center text-white bg-secondary-0 w-2/3 p-2 rounded-full absolute -bottom-6 text-4xl font-heading shadow-medium hover:shadow-largeshadow-medium hover:shadow-large hover:scale-105 transition-all"
     >
       Buy
     </button>

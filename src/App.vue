@@ -1,5 +1,5 @@
 <script setup>
-import PizzaCard from './components/PizzaCard.vue'
+import PizzaCategory from './components/PizzaCategory.vue'
 import { pizzaData } from './data'
 </script>
 
@@ -10,11 +10,13 @@ import { pizzaData } from './data'
     <h2 class="text-center">The best pizza at Andel</h2>
   </section>
 
-  <section>
+  <section class="bg-secondary-2 shadow-large-inset">
     <div
-      class="mx-auto bg-secondary-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center max-w-360 gap-x-8 gap-y-16 p-8 pb-16 shadow-large-inset"
+      v-for="pizzaCat in pizzaData"
+      :key="pizzaCat.id"
+      class="flex flex-col space-y-4 mx-auto max-w-5xl 2xl:max-w-360 p-8"
     >
-      <PizzaCard class="" v-for="pizza in pizzaData" :key="pizza.id" :pizza="pizza" />
+      <PizzaCategory :pizzaCat="pizzaCat" />
     </div>
   </section>
 
