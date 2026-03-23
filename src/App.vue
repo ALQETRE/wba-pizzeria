@@ -28,7 +28,7 @@ import { pizzaData } from './data'
     </div>
 
     <div>
-      <img class="size-12" src="@/assets/logo.svg" alt="Logo" />
+      <img class="size-12" src="@/assets/logo-white.svg" alt="Logo" />
     </div>
   </section>
 </template>
