@@ -4,13 +4,17 @@ defineProps(['pizza'])
 
 <template>
   <div
-    class="flex flex-col relative rounded-4xl bg-secondary-2 self-center p-2 size-full hover:-translate-y-4 hover:scale-103 transition-all shadow-medium hover:shadow-large"
+    class="flex flex-col relative rounded-4xl bg-primary-1 self-center p-2 size-full hover:-translate-y-4 hover:scale-103 transition-all shadow-medium hover:shadow-large"
   >
-    <img class="w-full aspect-square object-cover mb-auto" :src="pizza.img" alt="" />
+    <img class="w-full aspect-square object-cover mb-auto" :src="pizza.img" :alt="pizza.name" />
 
     <div class="mb-auto">
-      <h3 class="text-center text-white my-1">{{ pizza.name }}</h3>
-      <p class="text-center text-white pb-8 my-2">{{ pizza.price }}czk</p>
+      <p
+        class="text-center text-black my-1 text-3xl md:text-4xl lg:text-5xl font-heading font-semibold"
+      >
+        {{ pizza.name }}
+      </p>
+      <p class="text-center text-black pb-8 my-2">{{ pizza.price }}czk</p>
     </div>
 
     <button

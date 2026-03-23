@@ -17,19 +17,22 @@
   --font-heading: 'Josefin Slab', sans-serif;
 
   --shadow-small: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  --shadow-small-inset: inset 1px 1px 4px rgba(0, 0, 0, 0.4);
   --shadow-medium: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-medium-inset: inset 2px 2px 8px rgba(0, 0, 0, 0.4);
   --shadow-large: 4px 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-large-inset: inset 4px 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 @layer base {
   h1 {
-    @apply text-9xl font-heading;
+    @apply text-7xl md:text-9xl font-heading font-semibold md:font-[400];
   }
   h2 {
-    @apply text-7xl font-heading;
+    @apply text-5xl md:text-7xl font-heading;
   }
   h3 {
-    @apply text-5xl font-heading font-semibold;
+    @apply text-3xl md:text-5xl font-heading font-semibold;
   }
   p {
     @apply text-2xl font-normal;

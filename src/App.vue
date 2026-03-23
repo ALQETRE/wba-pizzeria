@@ -5,14 +5,14 @@ import { pizzaData } from './data'
 
 <template>
   <!-- Hero Section -->
-  <section class="flex flex-col items-center bg-primary-2 p-16">
+  <section class="flex flex-col items-center bg-primary-2 p-16 space-y-2">
     <h1 class="text-center">Pizza Linguine</h1>
     <h2 class="text-center">The best pizza at Andel</h2>
   </section>
 
   <section>
     <div
-      class="mx-auto bg-primary-0 grid grid-cols-4 justify-center max-w-360 gap-x-8 gap-y-16 p-8 pb-16"
+      class="mx-auto bg-secondary-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center max-w-360 gap-x-8 gap-y-16 p-8 pb-16 shadow-large-inset"
     >
       <PizzaCard class="" v-for="pizza in pizzaData" :key="pizza.id" :pizza="pizza" />
     </div>
