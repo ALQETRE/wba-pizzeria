@@ -17,7 +17,7 @@ export const pizzaData = [
       },
       {
         id: 4,
-        name: 'Quattro Formagii',
+        name: 'Quattro Formaggi',
         price: 130,
         img: 'src/assets/pizzas/quatro_formaggi.png',
       },
@@ -31,7 +31,7 @@ export const pizzaData = [
       { id: 1, name: 'Pepperoni', price: 130, img: 'src/assets/pizzas/pepperoni.png' },
       {
         id: 2,
-        name: 'Quattro Formagii',
+        name: 'Quattro Formaggi',
         price: 130,
         img: 'src/assets/pizzas/quatro_formaggi.png',
       },
