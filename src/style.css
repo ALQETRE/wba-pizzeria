@@ -25,16 +25,28 @@
 }
 
 @layer base {
-  h1 {
+  h1,
+  .h1 {
     @apply text-7xl md:text-9xl font-heading font-semibold md:font-[400];
   }
-  h2 {
+  h2,
+  .h2 {
     @apply text-5xl md:text-7xl font-heading;
   }
-  h3 {
+  h3,
+  .h3 {
     @apply text-3xl md:text-5xl font-heading font-semibold;
   }
-  p {
+  h4,
+  .h4 {
+    @apply text-3xl lg:text-4xl 2xl:text-5xl font-heading font-semibold;
+  }
+  h5,
+  .h5 {
+    @apply text-xl md:text-2xl xl:text-3xl font-heading font-semibold;
+  }
+  p,
+  a {
     @apply text-2xl font-normal;
   }
 }

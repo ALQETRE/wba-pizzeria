@@ -9,11 +9,9 @@ defineProps(['pizza'])
     <img class="w-full aspect-square object-cover mb-auto" :src="pizza.img" :alt="pizza.name" />
 
     <div class="mb-auto">
-      <p
-        class="text-center text-black my-1 text-3xl lg:text-4xl 2xl:text-5xl font-heading font-semibold"
-      >
+      <h4 class="text-center text-black my-1">
         {{ pizza.name }}
-      </p>
+      </h4>
       <p class="text-center text-black pb-8 my-2">{{ pizza.price }}czk</p>
     </div>
 

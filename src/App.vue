@@ -25,9 +25,9 @@ import { pizzaData } from './data'
   </section>
 
   <!-- Contacts -->
-  <section class="flex justify-between p-4 bg-primary-2">
+  <section class="flex justify-between p-4 bg-primary-2" id="Contacts">
     <div class="flex flex-col">
-      <h5 class="font-bold">Contacts:</h5>
+      <h4 class="">Contacts:</h4>
       <p>pizza@pizzalinguine.com</p>
     </div>
 
