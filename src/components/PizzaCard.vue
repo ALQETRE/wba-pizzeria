@@ -1,5 +1,8 @@
 <script setup>
-defineProps(['pizza'])
+import { useCart } from '../cart.js'
+const { cartArray, addPizzaToCart, clearCart, totalPrice } = useCart()
+
+defineProps(['pizza', 'cart'])
 </script>
 
 <template>
@@ -16,7 +19,9 @@ defineProps(['pizza'])
     </div>
 
     <button
+      v-if="!cart"
       class="text-center self-center text-white bg-secondary-0 w-2/3 p-2 rounded-full absolute -bottom-6 text-4xl font-heading shadow-medium hover:shadow-largeshadow-medium hover:shadow-large hover:scale-105 transition-all"
+      @click="addPizzaToCart(pizza)"
     >
       Buy
     </button>
