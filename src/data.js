@@ -19,7 +19,6 @@ export const pizzaData = [
         name: 'Veggie2',
         price: 100,
         img: veggieImg,
-        isSpecial: true,
       },
       {
         id: 4,

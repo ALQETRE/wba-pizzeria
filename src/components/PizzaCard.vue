@@ -9,9 +9,6 @@ defineProps(['pizza', 'cart'])
   <div
     class="flex flex-col relative rounded-4xl bg-primary-1 self-center p-2 size-full hover:-translate-y-4 hover:scale-103 transition-all shadow-medium hover:shadow-large"
   >
-    <div class="absolute w-64 rotate-45 left-8 top-8 justify-center overflow-hidden">
-      <p class="bg-detail-2 text-xl text-center">Special Offer</p>
-    </div>
     <img class="w-full aspect-square object-cover mb-auto" :src="pizza.img" :alt="pizza.name" />
 
     <div class="mb-auto">
