@@ -43,10 +43,14 @@
   }
   h5,
   .h5 {
-    @apply text-xl md:text-2xl xl:text-3xl font-heading font-semibold;
+    @apply text-lg md:text-2xl xl:text-3xl font-heading font-semibold;
   }
   p,
   a {
-    @apply text-2xl font-normal;
+    @apply text-xl font-normal;
+  }
+
+  button {
+    @apply cursor-pointer active:brightness-75;
   }
 }
