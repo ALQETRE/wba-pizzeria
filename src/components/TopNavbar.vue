@@ -7,7 +7,7 @@ const navBarHome = [
 ]
 
 const navBarCart = [
-  { id: 0, text: 'Pizza', link: '#Pizza' },
+  { id: 0, text: 'Pizza', link: '/' },
   { id: 1, text: 'Contacts', link: '#Contacts' },
 ]
 
