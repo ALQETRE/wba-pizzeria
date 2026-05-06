@@ -3,7 +3,7 @@ import ContactsSection from '@/components/ContactsSection.vue'
 import { useCart } from '../cart.js'
 import PizzaCard from '@/components/PizzaCard.vue'
 import TopNavbar from '@/components/TopNavbar.vue'
-const { cartArray, addPizzaToCart, clearCart, totalPrice } = useCart()
+const { cartArray, addPizzaToCart, clearCart, totalPrice, showToast } = useCart()
 </script>
 
 <template>

@@ -3,9 +3,12 @@ import ContactsSection from '@/components/ContactsSection.vue'
 import PizzaCategory from '../components/PizzaCategory.vue'
 import TopNavbar from '../components/TopNavbar.vue'
 import { pizzaData } from '../data'
+import BuyToast from '@/components/BuyToast.vue'
 </script>
 
 <template>
+  <BuyToast />
+
   <TopNavbar />
   <!-- Hero Section -->
   <section class="flex flex-col items-center bg-primary-2 p-16 space-y-2">

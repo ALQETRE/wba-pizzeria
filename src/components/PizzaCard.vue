@@ -1,6 +1,6 @@
 <script setup>
 import { useCart } from '../cart.js'
-const { cartArray, addPizzaToCart, clearCart, totalPrice } = useCart()
+const { cartArray, addPizzaToCart, clearCart, totalPrice, showToast } = useCart()
 
 defineProps(['pizza', 'cart'])
 </script>
