@@ -16,7 +16,7 @@ const { cartArray, addPizzaToCart, clearCart, totalPrice, showToast } = useCart(
   <!-- Pizza -->
   <section class="bg-secondary-2 shadow-large-inset" id="Pizza">
     <div class="mx-auto max-w-5xl 2xl:max-w-360 p-8 flex flex-col items-center">
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center w-full gap-8 pb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 justify-center w-full gap-8 pb-8">
         <PizzaCard
           class=""
           v-for="pizza in cartArray"
